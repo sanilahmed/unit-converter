@@ -46,7 +46,14 @@ def perform_conversion(amount, source_unit, target_unit):
     return None
 
 # Set up the Streamlit page
+st.set_page_config(
+    page_title="Unit Converter",
+    page_icon="🔄",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
 st.title("Multi-Purpose Unit Converter")
+
 
 # Input value from user
 input_value = st.number_input(
